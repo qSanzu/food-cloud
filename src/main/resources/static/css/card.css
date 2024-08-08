@@ -1,0 +1,63 @@
+
+   body {
+       font-family: 'Open Sans', sans-serif;
+       background-color: #eee;
+   }
+
+.card {
+    background-color: #fff;
+    width: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: none; /* Убранная тень */
+
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card-img {
+    border-radius: 11px;
+}
+
+.card-title {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-sub {
+    font-size: 1px;
+    font-weight: 200;
+    margin-top: 1px;
+}
+
+.btn-keeper {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #846A6A;
+    padding: 7px 12px;
+    text-decoration: none;
+    color: #eee;
+    border-radius: 5px;
+    transition: background-color 0.5s linear;
+}
+   .btn-cart {
+       width: 100%; /* Занимает всю ширину карточки */
+       background-color: #ccc; /* Серый фон */
+       color: #000; /* Черный текст */
+       padding: 10px 0; /* Увеличение высоты кнопки для лучшего вида */
+       text-align: center; /* Центрирование текста */
+       border: none; /* Удаление рамки */
+       border-radius: 20px; /* Скругленные углы, как у карточки */
+       cursor: pointer; /* Изменение курсора на указатель */
+       transition: background-color 0.3s ease; /* Сглаженное изменение цвета фона */
+   }
+
+   .btn-cart:hover {
+       background-color: #666; /* Темнеет при наведении */
+   }
+
+

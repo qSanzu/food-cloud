@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Питательный Сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" th:href="@{/css/card.css}">
+    <link rel="stylesheet" th:href="@{/css/modal-window.css}">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img th:src="@{/images/FoodCloud.png}" alt="Логотип" th:attr="style='width: 100px; height: auto;'">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Поддержка</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Корзина</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Войти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="container">
+                <div class="photo-container">
+                    <img th:src="@{/images/photo-zero.png}" alt="Фото" th:attr="style='width: auto; height: auto;'">
+                </div>
+                <div class="options">
+                    <div class="option-item">
+                        <label><input type="checkbox" name="position" value="1"> Позиция 1</label>
+                    </div>
+                    <div class="option-item">
+                        <label><input type="checkbox" name="position" value="2"> Позиция 2</label>
+                    </div>
+                    <div class="option-item">
+                        <label><input type="checkbox" name="position" value="3"> Позиция 3</label>
+                    </div>
+                    <div class="option-item">
+                        <label><input type="checkbox" name="position" value="1"> Позиция 4</label>
+                    </div>
+                    <div class="option-item">
+                        <label><input type="checkbox" name="position" value="2"> Позиция 5</label>
+                    </div>
+                    <div class="option-item">
+                        <label><input type="checkbox" name="position" value="3"> Позиция 6</label>
+                    </div>
+
+                </div>
+                <button id="accept-btn">Принять</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class='wrapper'>
+            <div class='card'>
+                <img class='card-img' th:src="@{/images/photo-zero.png}" alt="card" th:attr="style='width: auto; height: auto;'">
+                <div class='card-title'>Название</div>
+
+                <div class='card-sub'>
+                    <h3>123$</h3>
+                </div>
+
+                <div class='btn-keeper'>
+                    <button class='btn btn-cart' id="myBtn" href='#'>Добавить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class='wrapper'>
+            <div class='card'>
+                <img class='card-img' th:src="@{/images/photo-zero.png}" alt="card" th:attr="style='width: auto; height: auto;'">
+                <div class='card-title'>Название</div>
+
+                <div class='card-sub'>
+                    <h3>123$</h3>
+                </div>
+
+                <div class='btn-keeper'>
+                    <button class='btn btn-cart' id="myBtn" href='#'>Добавить</button>
+                </div>
+            </div>
+        </div>
+        <div class='wrapper'>
+            <div class='card'>
+                <img class='card-img' th:src="@{/images/photo-zero.png}" alt="card" th:attr="style='width: auto; height: auto;'">
+                <div class='card-title'>Название</div>
+
+                <div class='card-sub'>
+                    <h3>123$</h3>
+                </div>
+
+                <div class='btn-keeper'>
+                    <button class='btn btn-cart' id="myBtn" href='#'>Добавить</button>
+                </div>
+            </div>
+        </div>
+        <div class='wrapper'>
+            <div class='card'>
+                <img class='card-img' th:src="@{/images/photo-zero.png}" alt="card" th:attr="style='width: auto; height: auto;'">
+                <div class='card-title'>Название</div>
+
+                <div class='card-sub'>
+                    <h3>123$</h3>
+                </div>
+
+                <div class='btn-keeper'>
+                    <button class='btn btn-cart' id="myBtn" href='#'>Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script defer src="/js/scripts.js"></script>
+    <script defer src="/js/modal-window.js"></script>
+</body>
+</html>
+
